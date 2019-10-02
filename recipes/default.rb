@@ -5,6 +5,7 @@
 # Copyright:: 2019, The Authors, All Rights Reserved.
 #
 
+include_recipe 'apt::default'
 package 'mysql-client'
 package 'libmysqlclient-dev'
 
