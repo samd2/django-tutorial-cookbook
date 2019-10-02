@@ -1,1 +1,4 @@
-# django-tutorial-cookbook
+# tutorial
+
+TODO: Enter the cookbook description here.
+

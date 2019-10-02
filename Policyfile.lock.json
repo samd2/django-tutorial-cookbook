@@ -1,0 +1,328 @@
+{
+  "revision_id": "a348212a6a6d3cff4d94dba58766ae14f4151f4df0d7e97a3998cbe81a819bdb",
+  "name": "tutorial",
+  "run_list": [
+    "recipe[tutorial::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "apache2": {
+      "version": "5.2.1",
+      "identifier": "4193fa5fb685da4619a6a8736217eda0a10941bd",
+      "dotted_decimal_identifier": "18458577043097050.19731451951145495.261274152288701",
+      "cache_key": "apache2-5.2.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apache2/versions/5.2.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apache2/versions/5.2.1/download",
+        "version": "5.2.1"
+      }
+    },
+    "chef-sugar": {
+      "version": "5.0.4",
+      "identifier": "9060a224ace1124f7e4d1a5212fd246d037784a8",
+      "dotted_decimal_identifier": "40638646162612498.22375392779309821.40050628199592",
+      "cache_key": "chef-sugar-5.0.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-sugar/versions/5.0.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-sugar/versions/5.0.4/download",
+        "version": "5.0.4"
+      }
+    },
+    "chef-vault": {
+      "version": "3.1.1",
+      "identifier": "cc24de84e78b232c2b7e40e68e323deb0cee2717",
+      "dotted_decimal_identifier": "57461433380080419.12432720229994034.68079743543063",
+      "cache_key": "chef-vault-3.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-vault/versions/3.1.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-vault/versions/3.1.1/download",
+        "version": "3.1.1"
+      }
+    },
+    "django_platform": {
+      "version": "1.0.1",
+      "identifier": "022a1f9ad95c913d5d952174d8e44649a50311dc",
+      "dotted_decimal_identifier": "609265183710353.17272868672166116.77282114998748",
+      "cache_key": "django_platform-0d44610f5fb92f3d094c57257bae07b90922ade2",
+      "origin": "git@github.com:samd2/django_platform.git",
+      "source_options": {
+        "git": "git@github.com:samd2/django_platform.git",
+        "revision": "0d44610f5fb92f3d094c57257bae07b90922ade2"
+      }
+    },
+    "firewall": {
+      "version": "2.7.0",
+      "identifier": "12fad1a125585c8da0352273151999690ae67972",
+      "dotted_decimal_identifier": "5342327839479900.39864121787880729.168676433492338",
+      "cache_key": "firewall-2.7.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/firewall/versions/2.7.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/firewall/versions/2.7.0/download",
+        "version": "2.7.0"
+      }
+    },
+    "http_platform": {
+      "version": "1.4.4",
+      "identifier": "d63f27a8c401468505885ee588a9b05016c34c91",
+      "dotted_decimal_identifier": "60305084583772486.37442255168309417.193858025770129",
+      "cache_key": "http_platform-1.4.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/http_platform/versions/1.4.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/http_platform/versions/1.4.4/download",
+        "version": "1.4.4"
+      }
+    },
+    "poise": {
+      "version": "2.8.2",
+      "identifier": "5eada1fb133c83935c2ce413b8f2506e4e3cab6d",
+      "dotted_decimal_identifier": "26649559024483459.41478169451280626.88434689223533",
+      "cache_key": "poise-2.8.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/poise/versions/2.8.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/poise/versions/2.8.2/download",
+        "version": "2.8.2"
+      }
+    },
+    "poise-archive": {
+      "version": "1.5.0",
+      "identifier": "60d072e2d2b984baf1bf8896ab581fc9043ab1a9",
+      "dotted_decimal_identifier": "27250789614532996.52620150600805208.34948219842985",
+      "cache_key": "poise-archive-1.5.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/poise-archive/versions/1.5.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/poise-archive/versions/1.5.0/download",
+        "version": "1.5.0"
+      }
+    },
+    "poise-languages": {
+      "version": "2.1.2",
+      "identifier": "ea84709a3b4d8b7e76d2f456ceac6a8c79b33513",
+      "dotted_decimal_identifier": "66010763709074827.35596495480082092.117151569753363",
+      "cache_key": "poise-languages-2.1.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/poise-languages/versions/2.1.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/poise-languages/versions/2.1.2/download",
+        "version": "2.1.2"
+      }
+    },
+    "poise-python": {
+      "version": "1.7.0",
+      "identifier": "ebe824b70a39ef71fee428dcbc5b18aa4d19c677",
+      "dotted_decimal_identifier": "66401863914371567.32086928259857499.27119717041783",
+      "cache_key": "poise-python-1.7.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/poise-python/versions/1.7.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/poise-python/versions/1.7.0/download",
+        "version": "1.7.0"
+      }
+    },
+    "postgresql": {
+      "version": "7.1.4",
+      "identifier": "40ae76daa03ca00ec1b9a944d747b004aea57221",
+      "dotted_decimal_identifier": "18206224006790304.4153652826920775.193534156436001",
+      "cache_key": "postgresql-7.1.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/postgresql/versions/7.1.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/postgresql/versions/7.1.4/download",
+        "version": "7.1.4"
+      }
+    },
+    "tutorial": {
+      "version": "0.1.0",
+      "identifier": "5a4e652c123da3f55f2441b24fcba9aaf05c64eb",
+      "dotted_decimal_identifier": "25418944342015395.69065978619776971.186551642121451",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "2ad1e9bac9badb13fe8c67dc3c971f7f344fc6a5",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    },
+    "yum-epel": {
+      "version": "3.3.0",
+      "identifier": "187c02d6cef471b7f37402ac80fb6ca2db347732",
+      "dotted_decimal_identifier": "6891751076721777.51777600324665595.119446718150450",
+      "cache_key": "yum-epel-3.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/3.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/3.3.0/download",
+        "version": "3.3.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "apache2",
+        "= 5.2.1"
+      ],
+      [
+        "chef-sugar",
+        "= 5.0.4"
+      ],
+      [
+        "chef-vault",
+        "= 3.1.1"
+      ],
+      [
+        "django_platform",
+        ">= 0.0.0"
+      ],
+      [
+        "firewall",
+        "= 2.7.0"
+      ],
+      [
+        "http_platform",
+        "= 1.4.4"
+      ],
+      [
+        "poise",
+        "= 2.8.2"
+      ],
+      [
+        "poise-archive",
+        "= 1.5.0"
+      ],
+      [
+        "poise-languages",
+        "= 2.1.2"
+      ],
+      [
+        "poise-python",
+        "= 1.7.0"
+      ],
+      [
+        "postgresql",
+        "= 7.1.4"
+      ],
+      [
+        "tutorial",
+        ">= 0.0.0"
+      ],
+      [
+        "yum-epel",
+        "= 3.3.0"
+      ]
+    ],
+    "dependencies": {
+      "apache2 (5.2.1)": [
+
+      ],
+      "chef-sugar (5.0.4)": [
+
+      ],
+      "chef-vault (3.1.1)": [
+
+      ],
+      "django_platform (1.0.1)": [
+        [
+          "apache2",
+          "= 5.2.1"
+        ],
+        [
+          "chef-vault",
+          ">= 0.0.0"
+        ],
+        [
+          "http_platform",
+          ">= 0.0.0"
+        ],
+        [
+          "poise-python",
+          ">= 0.0.0"
+        ],
+        [
+          "postgresql",
+          ">= 0.0.0"
+        ],
+        [
+          "yum-epel",
+          ">= 0.0.0"
+        ]
+      ],
+      "firewall (2.7.0)": [
+        [
+          "chef-sugar",
+          ">= 0.0.0"
+        ]
+      ],
+      "http_platform (1.4.4)": [
+        [
+          "apache2",
+          "~> 5.2"
+        ],
+        [
+          "chef-vault",
+          ">= 0.0.0"
+        ],
+        [
+          "firewall",
+          ">= 0.0.0"
+        ],
+        [
+          "yum-epel",
+          ">= 0.0.0"
+        ]
+      ],
+      "poise (2.8.2)": [
+
+      ],
+      "poise-archive (1.5.0)": [
+        [
+          "poise",
+          "~> 2.6"
+        ]
+      ],
+      "poise-languages (2.1.2)": [
+        [
+          "poise",
+          "~> 2.5"
+        ],
+        [
+          "poise-archive",
+          "~> 1.0"
+        ]
+      ],
+      "poise-python (1.7.0)": [
+        [
+          "poise",
+          "~> 2.7"
+        ],
+        [
+          "poise-languages",
+          "~> 2.0"
+        ]
+      ],
+      "postgresql (7.1.4)": [
+
+      ],
+      "tutorial (0.1.0)": [
+        [
+          "django_platform",
+          ">= 0.0.0"
+        ]
+      ],
+      "yum-epel (3.3.0)": [
+
+      ]
+    }
+  }
+}
