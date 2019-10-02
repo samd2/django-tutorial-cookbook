@@ -2,6 +2,7 @@
 default['http_platform']['admin_email'] = "samueldarwin@yahoo.com"
 default['http_platform']['cert']['organization'] = "ACME Corp"
 default['http_platform']['cert']['org_unit'] = "IT"
+default['http_platform']['www']['additional_aliases'] = "django.logchart.com"
 default['django_platform']['app_repo']['git_repo'] = "samd2/django-website.git"
 default['django_platform']['app_repo']['rel_path_to_manage_directory'] = ""
 default['django_platform']['app_repo']['rel_path_to_static_directory'] = "static"
