@@ -7,7 +7,13 @@
   end
 end
 
-#temporary hack. Should be template first, at least.
+template '/home/django/configs/.env' do
+  source 'env.erb'
+  owner 'django'
+  group 'django'
+  mode '0755'
+end
+
 execute "copy_env_file" do
   command "cp /home/django/configs/.env /home/django/repo/.env"
   cwd "/home/django/"
