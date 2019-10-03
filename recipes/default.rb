@@ -12,8 +12,8 @@ if platform_family?('debian')
 end
 
 if platform_family?('rhel')
-  package 'mysql'
-  #package 'libmysqlclient-dev'
+  package 'mariadb'
+  package 'mariadb-devel'
 end
 
 
