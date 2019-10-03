@@ -6,8 +6,16 @@
 #
 
 include_recipe 'apt::default'
-package 'mysql-client'
-package 'libmysqlclient-dev'
+if platform_family?('debian')
+  package 'mysql-client'
+  package 'libmysqlclient-dev'
+end
+
+if platform_family?('rhel')
+  package 'mysql'
+  #package 'libmysqlclient-dev'
+end
+
 
 #should be in http_platform cookbook
 #%w[ /opt/chef /opt/chef/run_record ].each do |path|
