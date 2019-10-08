@@ -21,3 +21,4 @@ chef_version '>= 14.0'
 #
 depends 'django_platform'
 depends 'apt'
+depends 'chef-vault'

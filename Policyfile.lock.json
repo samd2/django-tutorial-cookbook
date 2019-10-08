@@ -1,22 +1,33 @@
 {
-  "revision_id": "a348212a6a6d3cff4d94dba58766ae14f4151f4df0d7e97a3998cbe81a819bdb",
-  "name": "tutorial",
+  "revision_id": "9e251aa9860478bb5ac0e33cf16addf9ba53ad71a5e11fac9e1a66a66882bad2",
+  "name": "django-tutorial",
   "run_list": [
-    "recipe[tutorial::default]"
+    "recipe[django-tutorial::default]"
   ],
   "included_policy_locks": [
 
   ],
   "cookbook_locks": {
     "apache2": {
-      "version": "5.2.1",
-      "identifier": "4193fa5fb685da4619a6a8736217eda0a10941bd",
-      "dotted_decimal_identifier": "18458577043097050.19731451951145495.261274152288701",
-      "cache_key": "apache2-5.2.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apache2/versions/5.2.1/download",
+      "version": "7.1.1",
+      "identifier": "17385050c3cb3e4d8a500c3037bd1e436d1c954e",
+      "dotted_decimal_identifier": "6535842067893054.21825649613223869.33274942231886",
+      "cache_key": "apache2-7.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apache2/versions/7.1.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apache2/versions/5.2.1/download",
-        "version": "5.2.1"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apache2/versions/7.1.1/download",
+        "version": "7.1.1"
+      }
+    },
+    "apt": {
+      "version": "7.2.0",
+      "identifier": "42f46ee8ced265bcc92c3bf40c9f7ceb3c443df1",
+      "dotted_decimal_identifier": "18846105652351589.53138487443197087.137349770264049",
+      "cache_key": "apt-7.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.2.0/download",
+        "version": "7.2.0"
       }
     },
     "chef-sugar": {
@@ -41,15 +52,36 @@
         "version": "3.1.1"
       }
     },
+    "django-tutorial": {
+      "version": "0.1.0",
+      "identifier": "63b7a4bf440d9d992038f1f85bb1252132eddf59",
+      "dotted_decimal_identifier": "28067940905782685.43101100386573233.40824518598489",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/samd2/django-tutorial-cookbook.git",
+        "revision": "77f0777de6efa3b4dd9e20cd25c0d7ec726fee4a",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    },
     "django_platform": {
       "version": "1.0.1",
-      "identifier": "022a1f9ad95c913d5d952174d8e44649a50311dc",
-      "dotted_decimal_identifier": "609265183710353.17272868672166116.77282114998748",
-      "cache_key": "django_platform-0d44610f5fb92f3d094c57257bae07b90922ade2",
-      "origin": "git@github.com:samd2/django_platform.git",
+      "identifier": "c52e8f6a59c8dbadad47b90527a1a8ea29775d49",
+      "dotted_decimal_identifier": "55501763911469275.48885694529349537.185723671502153",
+      "cache_key": "django_platform-111d7f28a428552bd3c64021d96e67173743dc56",
+      "origin": "git@github.com:sdarwin/django_platform.git",
       "source_options": {
-        "git": "git@github.com:samd2/django_platform.git",
-        "revision": "0d44610f5fb92f3d094c57257bae07b90922ade2"
+        "git": "git@github.com:sdarwin/django_platform.git",
+        "revision": "111d7f28a428552bd3c64021d96e67173743dc56",
+        "branch": "develop"
       }
     },
     "firewall": {
@@ -64,14 +96,15 @@
       }
     },
     "http_platform": {
-      "version": "1.4.4",
-      "identifier": "d63f27a8c401468505885ee588a9b05016c34c91",
-      "dotted_decimal_identifier": "60305084583772486.37442255168309417.193858025770129",
-      "cache_key": "http_platform-1.4.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/http_platform/versions/1.4.4/download",
+      "version": "2.0.2",
+      "identifier": "902229c0f6f9bbe8fafbad89d85ed143e084575d",
+      "dotted_decimal_identifier": "40569959372749243.65578153452099678.230089459783517",
+      "cache_key": "http_platform-20e2ced49eee8d449c0ae465ec41168efd8a69e6",
+      "origin": "git@github.com:sdarwin/http_platform.git",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/http_platform/versions/1.4.4/download",
-        "version": "1.4.4"
+        "git": "git@github.com:sdarwin/http_platform.git",
+        "revision": "20e2ced49eee8d449c0ae465ec41168efd8a69e6",
+        "branch": "develop"
       }
     },
     "poise": {
@@ -129,24 +162,15 @@
         "version": "7.1.4"
       }
     },
-    "tutorial": {
-      "version": "0.1.0",
-      "identifier": "5a4e652c123da3f55f2441b24fcba9aaf05c64eb",
-      "dotted_decimal_identifier": "25418944342015395.69065978619776971.186551642121451",
-      "source": ".",
-      "cache_key": null,
-      "scm_info": {
-        "scm": "git",
-        "remote": null,
-        "revision": "2ad1e9bac9badb13fe8c67dc3c971f7f344fc6a5",
-        "working_tree_clean": false,
-        "published": false,
-        "synchronized_remote_branches": [
-
-        ]
-      },
+    "selinux": {
+      "version": "3.0.0",
+      "identifier": "7017a92afa3f0098c0747a304cbe4fcccd7d7fa6",
+      "dotted_decimal_identifier": "31551212729548544.42995802958744766.87741039476646",
+      "cache_key": "selinux-3.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/selinux/versions/3.0.0/download",
       "source_options": {
-        "path": "."
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/selinux/versions/3.0.0/download",
+        "version": "3.0.0"
       }
     },
     "yum-epel": {
@@ -171,7 +195,11 @@
     "Policyfile": [
       [
         "apache2",
-        "= 5.2.1"
+        "= 7.1.1"
+      ],
+      [
+        "apt",
+        "= 7.2.0"
       ],
       [
         "chef-sugar",
@@ -180,6 +208,10 @@
       [
         "chef-vault",
         "= 3.1.1"
+      ],
+      [
+        "django-tutorial",
+        ">= 0.0.0"
       ],
       [
         "django_platform",
@@ -191,7 +223,7 @@
       ],
       [
         "http_platform",
-        "= 1.4.4"
+        ">= 0.0.0"
       ],
       [
         "poise",
@@ -214,8 +246,8 @@
         "= 7.1.4"
       ],
       [
-        "tutorial",
-        ">= 0.0.0"
+        "selinux",
+        "= 3.0.0"
       ],
       [
         "yum-epel",
@@ -223,7 +255,10 @@
       ]
     ],
     "dependencies": {
-      "apache2 (5.2.1)": [
+      "apache2 (7.1.1)": [
+
+      ],
+      "apt (7.2.0)": [
 
       ],
       "chef-sugar (5.0.4)": [
@@ -232,11 +267,21 @@
       "chef-vault (3.1.1)": [
 
       ],
-      "django_platform (1.0.1)": [
+      "django-tutorial (0.1.0)": [
         [
-          "apache2",
-          "= 5.2.1"
+          "django_platform",
+          ">= 0.0.0"
         ],
+        [
+          "apt",
+          ">= 0.0.0"
+        ],
+        [
+          "chef-vault",
+          ">= 0.0.0"
+        ]
+      ],
+      "django_platform (1.0.1)": [
         [
           "chef-vault",
           ">= 0.0.0"
@@ -256,6 +301,10 @@
         [
           "yum-epel",
           ">= 0.0.0"
+        ],
+        [
+          "selinux",
+          ">= 0.0.0"
         ]
       ],
       "firewall (2.7.0)": [
@@ -264,10 +313,10 @@
           ">= 0.0.0"
         ]
       ],
-      "http_platform (1.4.4)": [
+      "http_platform (2.0.2)": [
         [
           "apache2",
-          "~> 5.2"
+          ">= 6.0.0"
         ],
         [
           "chef-vault",
@@ -279,6 +328,10 @@
         ],
         [
           "yum-epel",
+          ">= 0.0.0"
+        ],
+        [
+          "apt",
           ">= 0.0.0"
         ]
       ],
@@ -314,11 +367,8 @@
       "postgresql (7.1.4)": [
 
       ],
-      "tutorial (0.1.0)": [
-        [
-          "django_platform",
-          ">= 0.0.0"
-        ]
+      "selinux (3.0.0)": [
+
       ],
       "yum-epel (3.3.0)": [
 

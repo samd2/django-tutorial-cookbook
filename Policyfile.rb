@@ -4,15 +4,18 @@
 # https://docs.chef.io/policyfile.html
 
 # A name that describes what the system you're building with Chef does.
-name 'tutorial'
+name 'django-tutorial'
 
 # Where to find external cookbooks:
 default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'tutorial::default'
+run_list 'django-tutorial::default'
 
 # Specify a custom source for a single cookbook:
-cookbook 'tutorial', path: '.'
+cookbook 'django-tutorial', path: '.'
 
-cookbook "django_platform", git: 'git@github.com:samd2/django_platform.git'
+cookbook "http_platform", git: 'git@github.com:sdarwin/http_platform.git', branch: 'develop'
+cookbook "django_platform", git: 'git@github.com:sdarwin/django_platform.git', branch: 'develop'
+cookbook "chef-vault"
+
