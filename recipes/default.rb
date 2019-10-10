@@ -1,5 +1,5 @@
 #
-# Cookbook:: django-tutorial
+# Cookbook:: django-website
 # Recipe:: default
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.

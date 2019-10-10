@@ -1,4 +1,4 @@
-name 'django-tutorial'
+name 'django-website'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
