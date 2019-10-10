@@ -13,7 +13,8 @@ end
 #auth = data_bag_item('bag3','auth')
 
 #vault data bag
-auth = ChefVault::Item.load('vaultbag','auth')
+#auth = ChefVault::Item.load('vaultbag','auth')
+auth = chef_vault_item('vaultbag','auth')
 
 template '/home/django/configs/.env' do
   variables(
